@@ -1,14 +1,14 @@
 .Header {
   text-align: center;
-  border: 1px solid hotpink;
+  border: 1px solid var(--color-primary);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 
 .Header__title {
-  background-color: hotpink;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   padding-top: 8px;
   margin: 0;
 }
@@ -16,7 +16,7 @@
 .Header__subtitle {
   display: block;
   font-size: 75%;
-  background-color: white;
-  color: hotpink;
+  background-color: var(--color-white);
+  color: var(--color-primary);
   padding: 8px;
 }
