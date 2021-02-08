@@ -1,4 +1,4 @@
-import createElement from '../lib/createElement'
+import createElement from '../../lib/createElement'
 import './CreateForm.css'
 
 export default function CreateForm() {
