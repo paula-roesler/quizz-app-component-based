@@ -1,4 +1,4 @@
-import createElement from './lib/createElement'
+import createElement from '../lib/createElement'
 import Card from './components/Card'
 import Header from './components/Header'
 
