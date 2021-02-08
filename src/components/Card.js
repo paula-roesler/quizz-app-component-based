@@ -8,7 +8,7 @@ export default function Card(question, answer) {
   const answerEl = createElement('p', { hidden: true, innerText: answer })
 
   buttonEl.addEventListener('click', () => {
-    answerEl.hidden = !answerEl.hidden
+    answerEl.hidden = !answerEl.hidden // wie togglen, kehrt boolsche Werte um durch das Ausrufezeichen
   })
 
   const el = createElement(
