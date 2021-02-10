@@ -3,6 +3,6 @@
   background: var(--color-primary);
   color: var(--color-white);
   border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px #0006;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #0006;
 }
