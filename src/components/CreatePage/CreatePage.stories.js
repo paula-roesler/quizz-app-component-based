@@ -1,8 +1,11 @@
 import CreatePage from './CreatePage'
+import { action } from '@storybook/addon-actions'
 
 export default {
-  title: 'CreatePage',
+  title: 'Pages/CreatePage',
   component: CreatePage,
 }
 
-export const base = () => CreatePage().el
+const onSubmit = action('onSubmit')
+
+export const base = () => CreatePage(onSubmit).el

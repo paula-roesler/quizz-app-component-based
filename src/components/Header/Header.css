@@ -1,5 +1,8 @@
 .Header {
-  text-align: center;
   background-color: var(--color-primary);
   color: var(--color-white);
+  display: grid;
+  place-items: center;
+  font-size: 0.7em;
+  text-align: center;
 }
