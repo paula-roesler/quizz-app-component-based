@@ -1,8 +1,8 @@
-import HomePage from './HomePage'
+import CreatePage from './CreatePage'
 
 export default {
-  title: 'HomePage',
-  component: HomePage,
+  title: 'CreatePage',
+  component: CreatePage,
 }
 
-export const base = () => HomePage()
+export const base = () => CreatePage().el

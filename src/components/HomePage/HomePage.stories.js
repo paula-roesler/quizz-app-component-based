@@ -5,4 +5,4 @@ export default {
   component: HomePage,
 }
 
-export const base = () => HomePage()
+export const base = () => HomePage().el
