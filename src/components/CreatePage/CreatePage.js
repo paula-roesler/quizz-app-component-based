@@ -1,14 +1,11 @@
-import CreateForm from '../CreateForm'
 import createElement from '../../lib/createElement'
+import CreateForm from '../CreateForm'
 import './CreatePage.css'
 
-export default function CreatePage(onSubmit) {
-  const el = createElement(
-    'main',
-    { className: 'CreatePage' },
-    CreateForm(onSubmit)
-  )
-  console.log({ onSubmit })
+export default function CreatePage(onSubmit, hidden) {
+  const form = CreateForm(onSubmit)
+  const el = createElement('main', { className: 'CreatePage', hidden }, form)
+
   function show() {
     el.hidden = false
   }

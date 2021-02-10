@@ -25,6 +25,8 @@ export default function CreateForm(onSubmit) {
     const question = questionInput.value
     const answer = answerInput.value
     onSubmit(question, answer)
+    form.reset()
+    questionInput.focus()
   })
 
   return form

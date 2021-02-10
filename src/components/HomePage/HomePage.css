@@ -1,5 +1,7 @@
 .HomePage {
   display: grid;
   padding: 20px;
+  align-content: start;
   gap: 20px;
+  overflow-y: scroll;
 }
