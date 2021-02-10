@@ -1,10 +1,23 @@
 .Navigation {
   display: grid;
-  gap: 1px;
   grid-template-columns: repeat(4, 1fr);
-  height: 48px;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: 100%;
 }
 
-.Navigation > img {
+.Navigation__button {
+  display: grid;
+  background: #eee;
+  align-content: center;
+  gap: 2px;
+  grid-template-rows: 20px auto;
+  border: none;
+  font-size: 0.5em;
+  padding: 4px;
+}
+
+.Navigation__button img {
   height: 100%;
+  width: 100%;
 }

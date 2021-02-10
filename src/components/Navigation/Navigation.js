@@ -1,22 +1,25 @@
 import createElement from '../../lib/createElement'
-import './Navigation.css'
-
 import homeSVG from '@fortawesome/fontawesome-free/svgs/solid/home.svg'
 import bookmarkSVG from '@fortawesome/fontawesome-free/svgs/solid/bookmark.svg'
-import createSVG from '@fortawesome/fontawesome-free/svgs/solid/plus-square.svg'
+import createSVG from '@fortawesome/fontawesome-free/svgs/solid/edit.svg'
 import settingsSVG from '@fortawesome/fontawesome-free/svgs/solid/sliders-h.svg'
+import './Navigation.css'
 
 const buttonsConfig = [
-  { svgPath: homeSVG, text: 'Home' },
-  { svgPath: bookmarkSVG, text: 'Bookmark' },
-  { svgPath: createSVG, text: 'Create' },
-  { svgPath: settingsSVG, text: 'Settings' },
+  { text: 'Home', svgPath: homeSVG },
+  { text: 'Bookmark', svgPath: bookmarkSVG },
+  { text: 'Create', svgPath: createSVG },
+  { text: 'Settings', svgPath: settingsSVG },
 ]
 
 export default function Navigation(onNavigate) {
   const buttons = buttonsConfig.map(({ svgPath, text }) => {
-    // destructuring assignment of Parameter
-    const button = createElement('img', { src: svgPath, alt: text })
+    const button = createElement(
+      'button',
+      { className: 'Navigation__button' },
+      createElement('img', { src: svgPath, alt: '' }),
+      text
+    )
     button.addEventListener('click', () => onNavigate(text))
     return button
   })
